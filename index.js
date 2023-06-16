@@ -36,19 +36,19 @@ const array2CSV = (data, {
 
 const data = [
   {
-    _id: 1,
-    last_name: 'Aritonang',
-    first_name: 'Marcel',
+    id: 1,
+    last_name: 'Doe',
+    first_name: 'John',
   },
   {
-    _id: 2,
-    last_name: 'Aritonang',
-    first_name: 'Nicola',
+    id: 2,
+    last_name: 'Dee',
+    first_name: 'Jane',
   },
 ]
 
 const finalString = array2CSV(data, { 
-  delimiter: "tab", 
+  delimiter: ';', 
   useDoubleQuotes: true,
 });
 console.log(finalString);
